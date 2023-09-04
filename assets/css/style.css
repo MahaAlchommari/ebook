@@ -307,7 +307,9 @@ nav .btn a {
 }
 
 .intr {
+    width: 800px;
     margin-top: 40px;
+
 }
 
 
@@ -335,6 +337,7 @@ nav .btn a {
 }
 
 .lor p, .img-quo p {
+    width: 800px;
     font-size: 20px;
     font-weight: 500;
 }
@@ -396,7 +399,7 @@ hr {
     justify-content: center;
 }
 
-#Delegate, #Habits  {
+#Delegate, #Habits {
     display: flex;
     flex-direction: column;
     margin-left: 380px;
@@ -522,7 +525,7 @@ hr {
         position: relative;
     }
 
-    .intr p, .intr .lor p, .lor-2 p, .cc, .img-quo, #Habits p {
+    .intr, .lor p, .img-quo p p, .lor-2 p, .cc, .img-quo, #Habits p {
         width: auto;
     }
 
