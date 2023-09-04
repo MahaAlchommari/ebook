@@ -347,7 +347,7 @@ nav .btn a {
 /* start media */
 @media screen and (max-width:990px) {
     .header, .black {
-        height: 150vh;
+        height: 120vh;
     }
 
     .toggleMenu {
