@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Unbounded', sans-serif;
+}
+
+
+
+.black {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.47);
+}
+
+
+.header {
+    height: 100vh;
+    background: url(./../img/businessman-sitting-by-table-cafe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* navigation*/
+header {
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem 0;
+}
+
+.logo {
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    max-width: 35px;
+}
+
+.logo h1 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+nav ul {
+    gap: 2rem;
+    align-items: center;
+}
+
+nav a {
+    font-weight: 500;
+    font-size: 13px;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: rgb(210, 179, 114);
+}
+
+nav .btn {
+    padding: 0.5em 1.2em;
+    border: 2px solid rgb(210, 179, 114);
+    border-radius: 25px;
+}
+
+nav .btn a {
+    color: rgb(210, 179, 114);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* end navigation */
+/* start hero */
+.hero {
+    gap: 2em;
+    flex-wrap: wrap;
+    min-height: calc(100vh- 93.6px);
+}
+
+.hero>* {
+    flex: 1 1 25em;
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: calmp(40px, 5vw, 70px);
+    line-height: 1;
+    color: white;
+
+}
+
+.hero p {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 1em 0;
+    color: rgb(210, 179, 114);
+    margin-top: 40px;
+}
+
+.hero-btn {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0.5em 1em;
+    background-color: rgb(210, 179, 114);
+    color: white;
+    margin-top: 20px;
+    border-radius: 25px;
+    /* transition: 0.3s ease-in-out; */
+}
+
+.meet {
+    font-size: 20px;
+    color: white;
+}
+
+.online {
+    z-index: 1000;
+}
+
+.people {
+    width: 63.5%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 193, 103);
+    position: absolute;
+    bottom: 0;
+    flex-wrap: wrap;
+}
+
+.people .woman, .people .male, .people .woman-img, .people .happy {
+    width: 65px;
+    height: 65px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+
+.people .male {
+    left: 15px;
+}
+
+.people .woman {
+    left: 30px;
+}
+
+.people .happy {
+    right: 20px;
+}
+
+.people h1 {
+    padding-left: 20px;
+}
+
+.people p {
+    padding-top: 7px;
+    padding-left: 30px;
+}
+
+.peopleHome {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+/* end hero */
+
+/* start main */
+#theBook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.screen {
+    width: 650px;
+    margin-top: 15%;
+}
+
+.par {
+    width: 35%;
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.par h1 {
+    font-size: 35px;
+}
+
+.par h1, .intr .sp {
+    margin-bottom: 40px;
+
+}
+
+.par .sp {
+    margin-top: 20px;
+}
+
+#theBook .par h2 {
+    color: rgb(242, 193, 103);
+    font-size: 21px;
+}
+
+#theBook .par p {
+    color: grey;
+}
+
+#theBook .par a, #work a {
+    color: rgb(255, 78, 2);
+    text-decoration: none;
+}
+
+.glance {
+
+    text-align: center;
+    margin-top: 10%;
+}
+
+.Preview h2 {
+    font-weight: bold;
+    color: rgb(242, 193, 103);
+}
+
+.Preview h1 {
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.Chapters {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form {
+    position: sticky;
+    display: flex;
+    border-radius: 20px;
+    border-color: orange;
+    height: 100%;
+    bottom: 0;
+}
+
+.form ul li {
+    list-style-type: none;
+    margin: 10px 10px;
+    border-radius: 50px;
+    background-color: #f0f8ff;
+}
+
+.form ul li a {
+    text-decoration: none;
+    color: grey;
+    white-space: nowrap;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.form ul li:hover {
+    color: white;
+    background-color: coral;
+}
+
+.form ul li a:hover {
+    color: white;
+}
+
+.intr {
+    width: 800px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.intr p, .Win p {
+    color: grey;
+    margin-top: 20px;
+}
+
+
+.lor {
+    height: 150px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+
+}
+
+.lor h2, .lor-2 p {
+    width: 800px;
+}
+
+.lor-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    color: grey;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+/* end main */
+
+
+/* start media */
+@media screen and (max-width:990px) {
+    .toggleMenu {
+        position: absolute;
+        right: 5%;
+        background-image: url(./../img/open.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
+        padding: 2em;
+        z-index: 2000;
+        transition: background-size 0.3s ease-in-out;
+    }
+
+    .toggleMenu.active {
+        position: fixed;
+        background-image: url(./../img/close.png);
+        background-size: 25px;
+    }
+
+    .navigation {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-height: 0;
+        opacity: 0;
+        transform-origin: top;
+        transform: scale(1, 0);
+    }
+
+    .navigation.active {
+        position: fixed;
+        inset: 0;
+        margin: auto;
+        max-height: 100%;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.954);
+        transform: scale(1, 1);
+        z-index: 1001;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .online {
+        width: 520px;
+        margin: auto;
+    }
+
+    .people {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        margin-top: 0px;
+        align-items: center;
+    }
+
+    .people img {
+        margin-top: 40px;
+    }
+
+    .people h1 {
+        font-size: 13px;
+        margin-top: 40px;
+
+    }
+
+    .people p {
+        font-size: 10px;
+        margin-right: 20px;
+        margin-top: 40px;
+
+    }
+
+    #theBook {
+        gap: 8px;
+    }
+
+    .par {
+        width: 80%;
+        margin: auto 10px;
+    }
+
+    #theBook .par h2 {
+        font-size: 18px;
+    }
+
+    #theBook .par h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .form {
+        margin: auto;
+    }
+
+    .intr, .lor h2, .lor-2 p {
+        width: auto;
+    }
+
+}
+
+/* end media */
