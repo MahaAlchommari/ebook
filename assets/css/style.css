@@ -475,7 +475,7 @@ hr {
     color: gray;
 }
 
-.Reviews {
+#Reviews {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -483,7 +483,7 @@ hr {
     flex-wrap: wrap;
 }
 
-.Reviews .alt {
+#Reviews .alt {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -492,7 +492,7 @@ hr {
 
 }
 
-.Reviews .alt p {
+#Reviews .alt p {
     color: rgb(235, 190, 107);
     margin-top: 50px;
     font-size: 20px;
@@ -514,6 +514,7 @@ hr {
     background-position: center;
     background-size: cover;
     border-radius: 20px;
+
 }
 
 
@@ -522,19 +523,21 @@ hr {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.361);
     border-radius: 20px;
-
 }
 
 .card1 h3 {
     padding-top: 150px;
     margin-left: 30px;
     color: white;
+    line-height: 30px;
+
 }
 
 .card1 p {
     width: 350px;
     margin-left: 30px;
     color: white;
+    line-height: 30px;
 }
 
 
@@ -573,6 +576,118 @@ hr {
 }
 
 /* end main */
+/* start footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: rgb(220, 130, 97);
+    clip-path: polygon(30% 0%, 100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
+    margin-top: 100px;
+}
+
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-card {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 2px rgb(200, 200, 200);
+}
+
+.footer-card h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 70%;
+    text-align: center;
+}
+
+.footer-card input {
+    width: 80%;
+    height: 35px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    padding: 25px;
+    font-weight: 500;
+    border: 1px solid rgba(165, 165, 193, 0.717);
+}
+
+
+.footer-card button {
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 147, 112);
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 30px;
+
+}
+
+
+.decrip .title-fq {
+    margin-left: 30px;
+    font-size: 20px;
+    color: rgb(209, 163, 77);
+    font-weight: bold;
+}
+
+.decrip h1 {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+
+.decrip .loc, .decrip .num, .decrip .em, .sm-p, .sm-span {
+    margin-left: 30px;
+    margin-top: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.decrip2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.decrip2 .title-fq {
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(209, 163, 77);
+}
+
+/* .why {
+    display: flex;
+    flex-direction: column;
+} */
+
+.decrip2 img {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.sm-p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.sm-span {
+    font-size: 12px;
+    color: rgb(238, 190, 88);
+}
+
+/* end footer */
 
 
 /* start media */
@@ -677,7 +792,7 @@ hr {
         margin: auto;
     }
 
-    .intr, .lor p, .img-quo p p, .lor-2 p, .cc, .img-quo, #Habits p, .last-p, .card1 p {
+    .intr, .lor p, .img-quo p p, .lor-2 p, .cc, .img-quo, #Habits p, .last-p, .card1 p, .footer-card {
         width: auto;
     }
 
@@ -685,7 +800,7 @@ hr {
         margin-left: 0;
     }
 
-    .last {
+    .last, .footer-card, .colo, #Win img {
         margin: auto;
     }
 
@@ -702,6 +817,17 @@ hr {
         margin: 10px;
         margin: auto;
         width: 350px;
+    }
+
+    footer {
+        height: 900px;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .footer-card {
+        margin-bottom: 30px;
     }
 }
 
