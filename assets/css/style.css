@@ -475,13 +475,103 @@ hr {
     color: gray;
 }
 
-/* 
+.Reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Reviews .alt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.Reviews .alt p {
+    color: rgb(235, 190, 107);
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.card1 {
+    background-size: contain;
+    background-image: url('/assets/img/businessman-sitting-by-table-cafe.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
 
 
+.black1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.361);
+    border-radius: 20px;
+
+}
+
+.card1 h3 {
+    padding-top: 150px;
+    margin-left: 30px;
+    color: white;
+}
+
+.card1 p {
+    width: 350px;
+    margin-left: 30px;
+    color: white;
+}
 
 
+.box, .box1 {
+    background-color: rgba(255, 127, 80, 0.774);
+    width: 170px;
+    border-radius: 15px;
+    margin-left: 100px;
+    position: absolute;
+}
 
-*/
+
+.box img, .box1 img {
+    height: 50px;
+    margin-left: 60px;
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+
+}
+
+
+.box p, .box1 p {
+    margin-left: 60px;
+}
+
+
+.box h5 {
+    padding-left: 60px;
+    color: white;
+}
+
+.box1 h5 {
+    padding-left: 50px;
+    color: white;
+}
+
 /* end main */
 
 
@@ -587,7 +677,7 @@ hr {
         margin: auto;
     }
 
-    .intr, .lor p, .img-quo p p, .lor-2 p, .cc, .img-quo, #Habits p, .last-p {
+    .intr, .lor p, .img-quo p p, .lor-2 p, .cc, .img-quo, #Habits p, .last-p, .card1 p {
         width: auto;
     }
 
@@ -608,6 +698,11 @@ hr {
         margin: 40px 20px;
     }
 
+    .card1 {
+        margin: 10px;
+        margin: auto;
+        width: 350px;
+    }
 }
 
 /* end media */
