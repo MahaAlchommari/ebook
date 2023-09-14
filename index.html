@@ -22,13 +22,13 @@
                 </div>
                 <div class="toggleMenu" onclick="toggleMenu();"></div>
                 <nav class="navigation row">
-                    <ul class="row">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#theBook">The Book</a></li>
-                        <li><a href="#author">Author</a></li>
-                        <li><a href="#Reviews"> Reviews</a></li>
-                        <li><a href="#footer">Contact</a></li>
-                        <li class="btn"><a href="#">Download</a></li>
+                    <ul class="row menu">
+                        <li onclick="toggleMenu()"><a href="#" class="active">Home</a></li>
+                        <li onclick="toggleMenu()"><a href="#theBook">The Book</a></li>
+                        <li onclick="toggleMenu()"><a href="#author">Author</a></li>
+                        <li onclick="toggleMenu()"><a href="#Reviews"> Reviews</a></li>
+                        <li onclick="toggleMenu()"><a href="#footer">Contact</a></li>
+                        <li onclick="toggleMenu()" class="btn"><a href="#">Download</a></li>
                     </ul>
                 </nav>
             </header>
@@ -87,14 +87,14 @@
                 <form class="container Chapters">
                     <fieldset class="form">
                         <ul>
-                            <li><a href="#Introducing">Introducing </a></li>
+                            <li><a href="#Introducing" class="lolo active">Introducing </a></li>
                             <li><a href="#Win">Chapter1: <b>Win back your time</b></a></li>
                             <li><a href="#work">Chapter2: <b>Work less, do more</b></a></li>
                             <li><a href="#Delegate">Chapter3: <b>Delegate</b></a></li>
                             <li><a href="#Habits">Chapter4: <b>Habits</b></a></li>
                         </ul>
                     </fieldset>
-                    <div id="Introducing ">
+                    <div id="Introducing">
                         <div class="intr">
                             <h1>Introducing ebook </h1>
                             <p>This ebook landing page is good to use for any purpose. This layout is based on
@@ -311,6 +311,15 @@
                 navbar.style.backgroundColor = 'black';
             }
         });
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+
     </script>
     <script src="./main.js"></script>
 

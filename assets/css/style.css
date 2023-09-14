@@ -100,7 +100,7 @@ nav a {
     transition: 0.3s ease-in-out;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
     color: rgb(210, 179, 114);
 }
 
@@ -124,6 +124,7 @@ nav .btn a {
     gap: 2em;
     flex-wrap: wrap;
     min-height: calc(100vh- 93.6px);
+    width: 100wv;
 }
 
 .hero>* {
@@ -328,6 +329,14 @@ nav .btn a {
     flex-wrap: wrap;
     width: 800px;
 
+}
+
+.lolo.active, #element {
+    background-color: coral;
+    color: white;
+    border-radius: 50px;
+    width: 300px;
+    font-weight: bold;
 }
 
 .intr {
@@ -716,6 +725,12 @@ footer {
 
 
 /* start media */
+@media screen and (max-width:1444) {
+    .nave {
+        justify-content: center !important;
+    }
+}
+
 @media screen and (max-width:990px) {
     .header, .black {
         height: 110vh;
@@ -743,6 +758,7 @@ footer {
         padding: 2em;
         z-index: 2000;
         transition: background-size 0.3s ease-in-out;
+        margin-left: 50px;
     }
 
     .toggleMenu.active {
