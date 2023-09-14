@@ -725,6 +725,12 @@ footer {
         max-width: 100%;
     }
 
+    .nave {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
     .toggleMenu {
         position: absolute;
         right: 5%;
