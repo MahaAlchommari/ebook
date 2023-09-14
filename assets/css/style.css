@@ -868,4 +868,18 @@ footer {
     }
 }
 
+@media screen and (max-width:400px) {
+    .nave {
+        flex-wrap: nowrap;
+        display: flex;
+        align-items: center;
+        padding: 10p;
+    }
+
+    .toggleMenu {
+        position: relative;
+    }
+}
+
+
 /* end media */
