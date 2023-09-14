@@ -15,7 +15,7 @@
     <!-- start navigation-->
     <div class="header">
         <div class="black">
-            <header class="row container">
+            <header class="container1 row  nave">
                 <div href="#" class="logo row">
                     <img src="./assets/img/Book-icon-orange.png" alt="icon" width="50px">
                     <h1>ebook</h1>
@@ -300,9 +300,19 @@
         </footer>
         <!-- end footer -->
     </div>
+    <script>
+        window.addEventListener('scroll', function () {
+            var navbar = document.querySelector('.nave');
+            var scrollPosition = window.scrollY;
 
+            if (scrollPosition <= 50) {
+                navbar.style.backgroundColor = 'transparent';
+            } else {
+                navbar.style.backgroundColor = 'black';
+            }
+        });
+    </script>
     <script src="./main.js"></script>
-
 
 </body>
 

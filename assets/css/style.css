@@ -5,6 +5,9 @@
     font-family: 'Unbounded', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 .black {
     height: 100vh;
@@ -44,12 +47,18 @@ ul {
     margin: 0 auto;
 }
 
+.container1 {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 /* navigation*/
 header {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
     padding: 1.5rem 0;
+    width: 100%;
 }
 
 .logo {
@@ -64,6 +73,19 @@ header {
 .logo h1 {
     font-weight: 700;
     font-size: 35px;
+}
+
+.nave {
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    padding-left: 70px;
+    z-index: 2000;
+}
+
+.nave.scrolled {
+    background-color: black;
 }
 
 nav ul {
@@ -86,12 +108,14 @@ nav .btn {
     padding: 0.5em 1.2em;
     border: 2px solid rgb(210, 179, 114);
     border-radius: 25px;
+    margin-right: 50px;
 }
 
 nav .btn a {
     color: rgb(210, 179, 114);
     font-weight: 500;
     font-size: 14px;
+
 }
 
 /* end navigation */
@@ -119,7 +143,7 @@ nav .btn a {
     font-size: 20px;
     padding: 1em 0;
     color: rgb(210, 179, 114);
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 .hero-btn {
@@ -140,6 +164,7 @@ nav .btn a {
 
 .online {
     z-index: 1000;
+    margin-top: 30px;
 }
 
 .people {
@@ -270,7 +295,7 @@ nav .btn a {
     border-radius: 20px;
     border-color: orange;
     height: 100%;
-    top: 10px;
+    top: 100px;
 }
 
 .form ul li {
@@ -696,6 +721,10 @@ footer {
         height: 110vh;
     }
 
+    .container1 {
+        max-width: 100%;
+    }
+
     .toggleMenu {
         position: absolute;
         right: 5%;
@@ -744,6 +773,7 @@ footer {
     .online {
         width: 400px;
         margin: auto;
+        margin-top: 0px;
     }
 
     .people {
@@ -785,6 +815,7 @@ footer {
     .form {
         margin: auto;
         position: relative;
+        top: 10px;
     }
 
     #Win img, #Delegate img {
