@@ -776,6 +776,10 @@ footer {
         flex-direction: column;
     }
 
+    nav .btn {
+        margin-right: 0;
+    }
+
     .online {
         width: 400px;
         margin: auto;
@@ -876,8 +880,8 @@ footer {
         padding: 10p;
     }
 
-    .toggleMenu {
-        position: relative;
+    .nave h1 {
+        font-size: 20px;
     }
 }
 
