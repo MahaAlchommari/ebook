@@ -23,7 +23,7 @@
                 <div class="toggleMenu" onclick="toggleMenu();"></div>
                 <nav class="navigation row">
                     <ul class="row menu">
-                        <li onclick="toggleMenu()"><a href="#" class="active">Home</a></li>
+                        <li onclick="toggleMenu()"><a href="#" class="active1">Home</a></li>
                         <li onclick="toggleMenu()"><a href="#theBook">The Book</a></li>
                         <li onclick="toggleMenu()"><a href="#author">Author</a></li>
                         <li onclick="toggleMenu()"><a href="#Reviews"> Reviews</a></li>
@@ -86,17 +86,20 @@
                 </div>
                 <form class="container Chapters">
                     <fieldset class="form">
-                        <ul>
-                            <li><a href="#Introducing" class="lolo active">Introducing </a></li>
-                            <li><a href="#Win">Chapter1: <b>Win back your time</b></a></li>
-                            <li><a href="#work">Chapter2: <b>Work less, do more</b></a></li>
-                            <li><a href="#Delegate">Chapter3: <b>Delegate</b></a></li>
-                            <li><a href="#Habits">Chapter4: <b>Habits</b></a></li>
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#Introducing" class="nav-link active">Introducing </a></li>
+                            <li class="nav-item"><a href="#Win" class="nav-link">Chapter1: <b>Win back your time</b></a>
+                            </li>
+                            <li class="nav-item"><a href="#work" class="nav-link">Chapter2: <b>Work less, do
+                                        more</b></a>
+                            </li>
+                            <li class="nav-item"><a href="#Delegate" class="nav-link">Chapter3: <b>Delegate</b></a></li>
+                            <li class="nav-item"><a href=" #Habits" class="nav-link">Chapter4: <b>Habits</b></a></li>
                         </ul>
                     </fieldset>
-                    <div id="Introducing">
+                    <div id="Introducing" class="section">
                         <div class="intr">
-                            <h1>Introducing ebook </h1>
+                            <h1 class="encabezado">Introducing ebook </h1>
                             <p>This ebook landing page is good to use for any purpose. This layout is based on
                                 Bootstrap 5 CSS framework.
                             </p>
@@ -115,9 +118,9 @@
                         </div>
                         <hr>
                     </div>
-                    <div id="Win">
+                    <div id="Win" class="section">
                         <div>
-                            <h2>Win back your time</h2>
+                            <h2 class="encabezado">Win back your time</h2>
                             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.</p>
                             <p> Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus
@@ -135,9 +138,9 @@
                         </div>
                         <hr>
                     </div>
-                    <div id="work">
+                    <div id="work" class="section">
                         <div>
-                            <h2>Work less, do more</h2>
+                            <h2 class="encabezado">Work less, do more</h2>
                             <p>Credit goes to <a href="https://www.freepik.com/" target="_blank"
                                     rel="noopener">FreePik</a>
                                 for
@@ -158,8 +161,8 @@
                         </div>
                         <hr>
                     </div>
-                    <div id="Delegate">
-                        <h2>Delegate</h2>
+                    <div id="Delegate" class="section">
+                        <h2 class="encabezado">Delegate</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua.</p>
                         <p> Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor
@@ -170,9 +173,9 @@
                         <p>You may want to contact us for more information about this template.</p>
                         <hr>
                     </div>
-                    <div id="Habits">
+                    <div id="Habits" class="section">
                         <div class="cc">
-                            <h2>Habits</h2>
+                            <h2 class="encabezado">Habits</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.</p>
                             <p> Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor
@@ -319,7 +322,6 @@
                 menu.style.display = "none";
             }
         }
-
     </script>
     <script src="./main.js"></script>
 
