@@ -19,8 +19,8 @@ window.addEventListener("scroll", () => {
   });
   navLinkEls.forEach((navLinkEl) => {
     if (navLinkEl.href.includes(currentSection)) {
-      document.querySelector(".active").classList.remove("active");
-      navLinkEl.classList.add("active");
+      document.querySelector(".active1").classList.remove("active1");
+      navLinkEl.classList.add("active1");
     }
   });
 });

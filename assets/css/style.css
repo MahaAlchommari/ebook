@@ -90,6 +90,7 @@ header {
 
 .nave.scrolled {
     background-color: black;
+    box-shadow: 0 3px 10px rbga(0, 0, 0, 0.15);
 }
 
 nav ul {
@@ -104,7 +105,7 @@ nav a {
     transition: 0.3s ease-in-out;
 }
 
-nav a:hover, nav a.active1 {
+nav a:hover, nav a.active {
     color: rgb(210, 179, 114);
 }
 
@@ -335,7 +336,7 @@ nav .btn a {
 
 }
 
-.active {
+.active1 {
     background-color: coral;
     color: white !important;
     border-radius: 50px;
@@ -561,6 +562,7 @@ hr {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.361);
     border-radius: 20px;
+    padding: 20px;
 }
 
 .card1 h3 {
@@ -705,11 +707,6 @@ footer {
     color: rgb(209, 163, 77);
 }
 
-/* .why {
-    display: flex;
-    flex-direction: column;
-} */
-
 .decrip2 img {
     margin-left: 30px;
     margin-top: 15px;
@@ -753,7 +750,7 @@ footer {
     .toggleMenu {
         position: absolute;
         right: 5%;
-        background-image: url(./../img/open.png);
+        background-image: url(./../img/close.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 30px;
@@ -767,7 +764,7 @@ footer {
 
     .toggleMenu.active {
         position: fixed;
-        background-image: url(./../img/close.png);
+        background-image: url(./../img/open.png);
         background-size: 25px;
     }
 
