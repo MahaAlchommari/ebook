@@ -546,10 +546,9 @@ hr {
 .card {
     margin-top: 50px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-    margin: 20px;
-
 }
 
 .card1 {
@@ -903,7 +902,7 @@ footer {
 
     .card1 {
         margin: 10px;
-        margin: auto;
+        margin: 0 auto;
         width: 350px;
     }
 
